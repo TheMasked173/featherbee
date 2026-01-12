@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  background: #eedec5;
+  color: #111;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #000058;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.header h1 {
+  color: gold;
+  font-weight: 600;
+  margin: 0;
+}
+
+.logo-circle {
+  height: 80px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.hero-logo {
+  margin-top: 1rem;
+  max-height: 480px;
+  width: auto;
+}
+
+/* ===== GRID LAYOUT ===== */
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+a.btn {
+  color: white;
+}
+/* ===== CARDS ===== */
+.book-card,
+.book-card2-1,
+.book-card2-2 {
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 420px; /* keeps all cards same height */
+}
+
+/* ===== IMAGES  ===== */
+.book-card img,
+.book-card2-1 img,
+.book-card2-2 img {
+  width: 180px;
+  height: 260px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* ===== HEADINGS ===== */
+.book-card h2,
+.book-card2-1 h2,
+.book-card2-2 h2 {
+  margin: 1rem 0 0.4rem;
+}
+
+/* ===== AUTHOR TEXT ===== */
+.author {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  margin-top: auto;
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  background: #000058;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #173bb3;
+  transform: translateY(-1px);
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1rem;
+}
+
+.contact a {
+  color: #000058;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #555;
+}
