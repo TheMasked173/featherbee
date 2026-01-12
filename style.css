@@ -14,6 +14,8 @@ body {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
+  flex-wrap: wrap; /* allows stacking on small screens */
+  text-align: center;
 }
 
 .header h1 {
@@ -34,8 +36,9 @@ body {
 
 .hero-logo {
   margin-top: 1rem;
-  max-height: 480px;
-  width: auto;
+  max-width: 90%;
+  max-height: 400px;
+  height: auto;
 }
 
 /* ===== GRID LAYOUT ===== */
@@ -47,9 +50,11 @@ body {
   max-width: 1100px;
   margin: auto;
 }
+
 a.btn {
   color: white;
 }
+
 /* ===== CARDS ===== */
 .book-card,
 .book-card2-1,
@@ -60,15 +65,16 @@ a.btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 420px; /* keeps all cards same height */
+  min-height: 420px;
 }
 
-/* ===== IMAGES  ===== */
+/* ===== IMAGES ===== */
 .book-card img,
 .book-card2-1 img,
 .book-card2-2 img {
-  width: 180px;
-  height: 260px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   object-fit: contain;
   border-radius: 8px;
 }
@@ -90,7 +96,7 @@ a.btn {
 .btn {
   margin-top: auto;
   display: inline-block;
-  padding: 0.6rem 1.4rem;
+  padding: 0.8rem 1.6rem; /* bigger for thumbs */
   background: #000058;
   text-decoration: none;
   border-radius: 10px;
@@ -106,7 +112,7 @@ a.btn {
 /* ===== CONTACT ===== */
 .contact {
   text-align: center;
-  margin: 2rem 0;
+  margin: 2rem 1rem;
   font-size: 1rem;
 }
 
@@ -125,4 +131,39 @@ footer {
   text-align: center;
   padding: 1rem;
   color: #555;
+}
+
+/* ========================= */
+/* 📱 MOBILE OPTIMIZATION */
+/* ========================= */
+@media (max-width: 600px) {
+
+  .logo-circle {
+    height: 60px;
+  }
+
+  .header h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-logo {
+    max-height: 260px;
+  }
+
+  .books {
+    grid-template-columns: 1fr; /* one column on phones */
+    padding: 1rem;
+  }
+
+  .book-card,
+  .book-card2-1,
+  .book-card2-2 {
+    min-height: auto;
+    padding: 1.2rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
