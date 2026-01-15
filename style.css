@@ -40,6 +40,23 @@ body {
   max-height: 400px;
   height: auto;
 }
+/* ===== ABOUT TEXT BOX ===== */
+.about-box {
+  background: white;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  padding: 1.8rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.about-box p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
 
 /* ===== GRID LAYOUT ===== */
 .books {
@@ -136,6 +153,15 @@ footer {
 /* ========================= */
 /* 📱 MOBILE OPTIMIZATION */
 /* ========================= */
+/* Mobile tweak */
+@media (max-width: 600px) {
+  .about-box {
+    padding: 1.2rem;
+    margin: 0 1rem 1.5rem;
+  }
+}
+
+
 @media (max-width: 600px) {
 
   .logo-circle {
@@ -167,3 +193,4 @@ footer {
     text-align: center;
   }
 }
+
