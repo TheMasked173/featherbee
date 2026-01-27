@@ -145,8 +145,8 @@ a.btn {
 
 .events img {
   width: 100%;
-  max-width: 480px;
-  max-height: 600px;
+  max-width: 50%;
+  max-height: 10%;
   height: auto;
   object-fit: contain;
   border-radius: 12px;
@@ -162,7 +162,7 @@ footer {
 }
 
 /* ========================= */
-/* 📱 MOBILE OPTIMIZATION */
+/* MOBILE OPTIMIZATION */
 /* ========================= */
 /* Mobile tweak */
 @media (max-width: 600px) {
@@ -204,6 +204,7 @@ footer {
     text-align: center;
   }
 }
+
 
 
 
