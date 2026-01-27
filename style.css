@@ -14,7 +14,7 @@ body {
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
-  flex-wrap: wrap; /* allows stacking on small screens */
+  flex-wrap: wrap;
   text-align: center;
 }
 
@@ -40,6 +40,7 @@ body {
   max-height: 400px;
   height: auto;
 }
+
 /* ===== ABOUT TEXT BOX ===== */
 .about-box {
   background: white;
@@ -57,6 +58,31 @@ body {
   text-align: left;
 }
 
+/* ===== EVENTS SECTION ===== */
+.events {
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.events h2 {
+  margin-bottom: 1rem;
+  color: #000058;
+}
+
+.events img {
+  width: 100%;
+  max-width: 300px;   /* small image size */
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
 
 /* ===== GRID LAYOUT ===== */
 .books {
@@ -113,7 +139,7 @@ a.btn {
 .btn {
   margin-top: auto;
   display: inline-block;
-  padding: 0.8rem 1.6rem; /* bigger for thumbs */
+  padding: 0.8rem 1.6rem;
   background: #000058;
   text-decoration: none;
   border-radius: 10px;
@@ -143,17 +169,6 @@ a.btn {
   text-decoration: underline;
 }
 
-.events img {
-  width: 100%;
-  max-width: 50%;
-  max-height: 10%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
-}
-
 /* ===== FOOTER ===== */
 footer {
   text-align: center;
@@ -164,16 +179,11 @@ footer {
 /* ========================= */
 /* MOBILE OPTIMIZATION */
 /* ========================= */
-/* Mobile tweak */
 @media (max-width: 600px) {
   .about-box {
     padding: 1.2rem;
     margin: 0 1rem 1.5rem;
   }
-}
-
-
-@media (max-width: 600px) {
 
   .logo-circle {
     height: 60px;
@@ -188,7 +198,7 @@ footer {
   }
 
   .books {
-    grid-template-columns: 1fr; /* one column on phones */
+    grid-template-columns: 1fr;
     padding: 1rem;
   }
 
@@ -203,8 +213,8 @@ footer {
     width: 100%;
     text-align: center;
   }
+
+  .events img {
+    max-width: 240px; /* even smaller on phones */
+  }
 }
-
-
-
-
