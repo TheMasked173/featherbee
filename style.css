@@ -143,27 +143,15 @@ a.btn {
   text-decoration: underline;
 }
 
-/* ===== EVENTS SECTION ===== */
-.events {
-  max-width: 1000px;
-  margin: 0 auto 2rem;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-.events h2 {
-  margin-bottom: 1rem;
-  color: #000058;
-}
-
 .events img {
   width: 100%;
-  max-width: 700px;
+  max-width: 480px;
+  max-height: 600px;
   height: auto;
+  object-fit: contain;
   border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ===== FOOTER ===== */
@@ -216,5 +204,6 @@ footer {
     text-align: center;
   }
 }
+
 
 
